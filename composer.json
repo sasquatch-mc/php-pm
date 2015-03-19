@@ -1,8 +1,8 @@
 {
-    "name": "marcj/php-pm",
+    "name": "sasquatch-mc/php-pm",
     "require": {
         "symfony/console": "~2.4",
-        "react/react": "0.3.3",
+        "react/react": "dev-master",
         "stack/builder": "1.0.*@dev",
         "symfony/http-foundation": "2.4.*@dev",
         "symfony/http-kernel": "2.4.*@dev",
