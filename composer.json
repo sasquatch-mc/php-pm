@@ -2,7 +2,7 @@
     "name": "sasquatch-mc/php-pm",
     "require": {
         "symfony/console": "~2.4",
-        "react/react": "dev-master",
+        "react/react": "0.4.*@dev",
         "stack/builder": "1.0.*@dev",
         "symfony/http-foundation": "2.4.*@dev",
         "symfony/http-kernel": "2.4.*@dev",

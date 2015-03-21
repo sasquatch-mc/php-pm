@@ -50,10 +50,11 @@ class Zf2 implements BridgeInterface
 
         self::mapRequest($request, $zfRequest);
 
+        $allowOverride = $sm->getAllowOverride();
         $sm->setAllowOverride(true);
         $sm->setService('Request', $zfRequest);
         $sm->setService('Response', $zfResponse);
-        $sm->setAllowOverride(false);
+        $sm->setAllowOverride($allowOverride);
 
         $event = $app->getMvcEvent();
         $event->setRequest($zfRequest);
