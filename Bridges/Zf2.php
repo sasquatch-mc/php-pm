@@ -101,8 +101,7 @@ class Zf2 implements BridgeInterface
     protected static function mapResponse(ReactResponse $reactResponse,
         ZendResponse $zfResponse)
     {
-        $zfResponseHeaders = $zfResponse->getHeaders()->toArray();
-        $headers = array_map('current', empty($zfResponseHeaders) ? [] : $zfResponseHeaders);
+        $headers = array_map(['current'], $zfResponse->getHeaders()->toArray());
         $reactResponse->writeHead($zfResponse->getStatusCode(), $headers);
         $reactResponse->end($zfResponse->getContent());
     }
